@@ -1,0 +1,18 @@
+.searchBar {
+	font-size: 15px;
+	outline: none;
+	border-radius: 3px;
+	border: solid 1px black;
+	width: 270px;
+	margin-bottom: 20px;
+	padding: 3px;
+	transition: border-color 250ms ease-in-out;
+}
+
+.searchBar:hover,
+.searchBar:focus {
+	border-color: rgb(70, 228, 228);
+}
+.searchBar::placeholder {
+	font-size: 15px;
+}

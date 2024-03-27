@@ -1,0 +1,52 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	border: solid 1px black;
+	border-radius: 3px;
+	padding: 10px 5px;
+	margin-bottom: 20px;
+	outline: none;
+	transition: border-color 250ms ease-in-out;
+}
+.form:hover {
+	border-color: rgb(70, 228, 228);
+}
+
+.fieldName,
+.fieldNumber {
+	font-size: 15px;
+	outline: none;
+	border: solid 1px black;
+	border-radius: 3px;
+	padding: 3px;
+	transition: border-color 250ms ease-in-out;
+}
+.fieldName:hover,
+.fieldName:focus,
+.fieldNumber:hover,
+.fieldNumber:focus {
+	border-color: rgb(70, 228, 228);
+}
+
+.labelNumber {
+	margin-top: 15px;
+}
+
+.addBtn {
+	font-weight: 500;
+	width: max-content;
+	margin: 10px auto 0;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(201, 194, 194, 0.836);
+	transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.addBtn:hover {
+	background-color: rgb(70, 228, 228);
+	color: white;
+}
+.error {
+	color: rgba(223, 19, 19, 0.856);
+}

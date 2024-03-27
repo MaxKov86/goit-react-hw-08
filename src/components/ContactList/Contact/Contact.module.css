@@ -1,0 +1,39 @@
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 5px;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 270px;
+	transition: border-color 250ms ease-in-out;
+}
+.item:hover {
+	border-color: rgb(70, 228, 228);
+}
+.button {
+	padding: 5px;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(201, 194, 194, 0.836);
+	transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.button:hover {
+	background-color: rgb(70, 228, 228);
+	color: white;
+}
+.iconPerson {
+	width: 20px;
+	height: 20px;
+}
+.iconPhone {
+	width: 18px;
+	height: 18px;
+}
+.text {
+	display: flex;
+	justify-content: baseline;
+	gap: 8px;
+	font-size: 14px;
+}
