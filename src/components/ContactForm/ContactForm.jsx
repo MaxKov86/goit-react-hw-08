@@ -34,7 +34,8 @@ const ContactForm = () => {
 		actions.resetForm();
 	};
 	return (
-		<Formik
+		
+			<Formik
 			initialValues={initialValues}
 			onSubmit={handleSubmit}
 			validationSchema={FeedbackSchema}
@@ -69,6 +70,8 @@ const ContactForm = () => {
 				</button>
 			</Form>
 		</Formik>
+		
+		
 	);
 };
 
