@@ -4,6 +4,8 @@ import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contacts/contactsOps';
+import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 
 const FeedbackSchema = Yup.object().shape({
 	name: Yup.string()
@@ -30,12 +32,14 @@ const ContactForm = () => {
 				name: values.name,
 				number: values.number,
 			})
-		);
+		)
+			.unwrap()
+			.then(() => toast.success(`You added ${values.name} to your contacts`));
+
 		actions.resetForm();
 	};
 	return (
-		
-			<Formik
+		<Formik
 			initialValues={initialValues}
 			onSubmit={handleSubmit}
 			validationSchema={FeedbackSchema}
@@ -70,8 +74,6 @@ const ContactForm = () => {
 				</button>
 			</Form>
 		</Formik>
-		
-		
 	);
 };
 

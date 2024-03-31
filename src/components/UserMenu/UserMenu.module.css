@@ -2,3 +2,6 @@
 	display: flex;
 	gap: 5px;
 }
+.text {
+	font-weight: 600;
+}
