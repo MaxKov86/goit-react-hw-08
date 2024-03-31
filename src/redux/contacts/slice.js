@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { fetchContacts, deleteContact, addContact } from './contactsOps';
-import { logOut } from '../auth/authOps';
+import { fetchContacts, deleteContact, addContact } from './operations';
+import { logOut } from '../auth/operations';
 
 const slice = createSlice({
 	name: 'contacts',

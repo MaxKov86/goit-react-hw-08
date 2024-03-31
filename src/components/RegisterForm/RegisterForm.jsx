@@ -1,9 +1,9 @@
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import css from './RegisterForm.module.css';
 import * as Yup from 'yup';
-// import { nanoid } from 'nanoid';
+
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/authOps';
+import { register } from '../../redux/auth/operations';
 
 const validationSchema = Yup.object().shape({
 	name: Yup.string()
