@@ -45,6 +45,7 @@ const ContactForm = () => {
 			validationSchema={FeedbackSchema}
 		>
 			<Form className={css.form}>
+				<h2 className={css.formTitle}>PHONE BOOK</h2>
 				<label htmlFor={nameId}>Name</label>
 				<Field
 					className={css.fieldName}

@@ -5,3 +5,16 @@
 .text {
 	font-weight: 600;
 }
+.logOutBtn {
+	background-color: transparent;
+	border: none;
+}
+.logOutIcon {
+	width: 20px;
+	height: 20px;
+	transition: color 300ms ease-in-out;
+}
+
+.logOutIcon:hover {
+	color: rgb(87, 87, 87);
+}

@@ -9,11 +9,11 @@ const Navigation = () => {
 		<nav>
 			<ul className={css.navList}>
 				<li>
-					<NavLink to="/">Home</NavLink>
+					<NavLink className={css.navLink} to="/">Home</NavLink>
 				</li>
 				{isLoggedIn && (
 					<li>
-						<NavLink to="/contacts">Contacts</NavLink>
+						<NavLink className={css.navLink} to="/contacts">Contacts</NavLink>
 					</li>
 				)}
 			</ul>
